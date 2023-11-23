@@ -1,0 +1,550 @@
+html, body {
+	background: #ffffff;
+	font-family: 'PT Sans Caption', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+    min-width: 280px;
+}
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+.row:after {
+    clear: both;
+    content: "";
+    display: table;
+    
+}
+
+.col-4{
+    width: 360px;
+    margin-right: 30px;
+    float: left;
+
+}
+.col-4:last-child{
+    margin-right: 0px;
+}
+
+
+.header_slogan_arrow {
+    background: #343c4e;
+	background-image: url("../img/bg/bg-header.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+    min-height: 400px;
+	color:#ffffff;
+	text-align:end;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: end;
+}     
+  
+
+
+.img_logo {
+    height: 530px;
+    margin-left: -1120px;
+    display: block;
+}
+
+
+
+.header_slogan1{
+	font-size: 35px;
+    height: 40px;
+}
+.header_slogan2{
+    font-size: 35px;
+    height: 160px;
+}
+.Header_arrow{
+    color: #ffffff;
+	font-size: 60px;
+	width: 60px;
+	margin-left: -30px;
+	position: absolute;
+	bottom: 30px;
+	left:50%;
+	height: 50px;
+    text-decoration: none !important;
+
+}
+.Header_arrow{
+    color: #ffffff;
+	font-size: 60px;
+	width: 60px;
+	margin-left: -30px;
+	position: absolute;
+	bottom: 30px;
+	left:50%;
+	height: 50px;
+    text-decoration: none !important;
+
+}
+
+.Header_arrow:hover{
+    color: black;
+    transition: 1.2S;
+    text-decoration: none !important;
+}
+/*.....................
+Портфолио
+......................
+*/
+.title{
+    font-size: 66px;
+    text-align: center;
+    padding: 60px;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.portfolio_img{
+    margin-bottom: 17px;
+    
+}
+.portfolio_img img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.portfolio_title{
+   font-size: 24px;
+   margin-bottom: 5px;
+   line-height: normal;
+    
+}
+
+
+.portfolio_text p{
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    
+}
+.portfolio_item{
+    margin-bottom: 20px;  
+}
+
+.portfolio_title a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #FFFFFF;
+    
+}
+
+.portfolio_title a:hover{
+    color:darkslateblue;
+    border-bottom: 1px solid darkslateblue;
+    transition: 0.5S;  
+}
+
+
+
+
+
+
+
+
+.footer{
+    background-color: #061638;
+    color:#6779A1;
+    padding-top: 90px;
+    padding-bottom:10px
+}
+
+.footer p{
+    margin-top: 0px;
+    margin-bottom:px
+}
+p.footer_name{
+    font-family: 'Merriweather', serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+    line-height: normal;
+    
+}
+p.footer_social{
+    color: white;
+    margin-bottom: 8px;
+    margin-left: 50px;
+    font-size: 20px;
+    
+}
+p.footer_social_icons{  
+    color: white;
+    font-size: 32px;       
+}
+
+p.footer_social_icons a{
+    color:white;
+    text-decoration: none;
+    margin-left: 9px;
+    
+}
+p.footer_social_icons a:hover{
+    color: #FFD900;
+    transition: 0.6S
+}
+
+p.footer_social_icons a:last-child{
+    margin-right: 0px;
+}
+
+
+
+.table_time {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  width: 290px;
+  margin-left: 39%;
+  background: #061638;
+  border: 2px;
+  border-color: #37B5A5;
+  border-radius: 30px;
+ }
+.table_time th {
+  font-family: 'Merriweather', serif;
+  color: #EDB749;
+  border-bottom: 1px solid #061638;
+}
+.table_time td {
+  font-family: 'Merriweather', serif;
+  color: #CAD4D6;
+  border-bottom: 1px solid #37B5A5;
+  border-right:1px solid #37B5A5;
+  padding: 7px 17px;
+}
+.table_time tr:last-child td {
+  border-bottom: none;
+}
+.table_time td:last-child {
+  border-right: none;
+}
+
+
+.botton{
+    font-weight:700;
+    text-decoration: none;
+    color: white;
+    text-transform:uppercase;
+    letter-spacing: 1.6px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-bottom: 13px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 60px;
+    
+}
+
+.botton:hover{
+    color:black;
+    transition: 0.6s;
+    border-color: black;
+    background-color:white;
+}
+
+.median_filter{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 60px;
+    margin-bottom: -40px;
+
+
+}
+.information{
+    width:  1270px;
+    justify-content: center;
+    border: 3px solid indigo;
+    border-radius: 16px;
+    margin-left: 8%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 22px;
+    margin-bottom: -px;
+    text-indent: 70px;
+    height: auto;
+   
+
+}
+.example p{
+    font-family: 'Merriweather', serif;
+    font-size: 34px;
+    color: black;
+    margin-bottom: 5px;
+    margin-left: 8%;
+
+}
+.file{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.file_b{
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #061638;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+.portfolio-sigle-page{
+    padding-bottom: 50px;
+    text-align: center;
+    
+}
+
+.portfolio-sigle-page img{
+    margin-bottom: 50px;
+    max-width: 100%;
+    height: auto;
+   
+
+}
+
+    
+    
+      
+
+
+.botton-back{
+    font-weight:700;
+    text-decoration: none;
+    color:navy;
+    text-transform:uppercase;
+    letter-spacing: 1.6px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-bottom: 13px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 60px;
+}
+.botton-back:hover{
+    color:black;
+    transition: 0.6s;
+    border-color: black;
+    background-color:white;
+}
+
+.portfolio-sigle-page-site img{
+    margin-bottom: 50px;
+    max-width: 100%;
+    margin-left: px;
+    height: auto;
+}
+.portfolio-sigle-page-site{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+    
+.botton-back-site{
+    font-weight:700;
+    margin-left: 50px;
+    text-decoration: none;
+    color:navy;
+    text-transform:uppercase;
+    letter-spacing: 1.6px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-bottom: 13px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 60px;
+}
+.botton-back-site:hover{
+    color:black;
+    transition: 0.6s;
+    border-color: black;
+    background-color:white;
+}
+@media (max-width: 1160px){
+    
+    .container{
+        width:100%;
+    }
+    .col-4 {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+        
+
+    }
+    .header{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .header_title{
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 15px;
+
+    }
+    
+    .header_slofan{
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .portfolio{
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .footer{
+        padding-top: 70px;
+        padding-bottom: 60px;
+        
+    }
+
+}
+
+
+
+
+/*
+font-family: 'Merriweather', serif;
+font-family: 'PT Sans Caption', sans-serif; обращение со шрифтами.
+https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css - normфлайзер
+
+
+line-height: 1.5; - Высота строчки.
+
+
+Подключить к классу стиль нужно: обратится к классу, например (.header{	
+                                                                           })
+
+background - фон.
+
+background-image: url("../путь"); - подключение фоногого изображения к тексту или объекту.
+
+Две точки в пути (..) выходит из папки css чтобы войти в img.
+
+
+    ТЭГИ:....................................................................
+
+сolor:#ЦВЕТ; - Цвет текста
+
+width:кол-во; - Ширина объекта
+
+background-color:#цвет;- Цвет фона
+
+background-repeat: no-repeat; - чтобы не повторялся.Не дублировлся на большом разрешении.
+
+background-position: center; - Позиция фона на сайте.
+
+background-size: cover; - чтобы фон пропорционально растягивался и заполнял весь блок внутри которого он находится.
+
+height - высота
+
+height: 100vh; - высота на весь экран
+
+text-align:center; - Расположение текста (выравнивание)
+
+text-dicoration: none; - убрать подчёркивание (стиль)
+
+line-height: 1.5; - Высота строчки.
+
+font-weight: bold; - Жирный шрифт.
+
+font-size:10px; - Размер шрифта
+
+margin - Внешний отступ
+
+padding:10px; - Внутренний отступ
+
+border:размер (1px) solid цвет (white); - Рамка
+
+display: block; - Сделать элемент блочным
+
+letter-spacing: размер; - Отступ между буквами.
+
+text-transform: uppercase; - Сделать заглавными.
+
+
+...............................................................
+display:flex;                                                  |
+	flex-direction:column; - Выравнивание по центру вертекали. |
+    lign-items: center; - Выравнивание по горизантали          |
+    justify-content: center; - Cделать по центру сайта         |
+...............................................................|
+
+
+...............................................................|
+.botton + .botton{                                             |
+	margin-size:10px; ----   Обращение к соседнему элементу    |
+}                                                              |
+...............................................................|
+
+
+...................................................................................
+.botton ~ .botton{
+	margin-size:10px; ----   Обращение ко всем элементам, которые ноходятся рядом
+}
+...................................................................................
+
+
+................................................................
+*{
+	background:white;  ------- Обращение ко всем элементам.
+}
+................................................................
+
+
+......................................................................................
+.a:hover{
+	background: black; ------- Изменение цвета элемента при наведении стрелки мыши.
+}
+......................................................................................
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+    

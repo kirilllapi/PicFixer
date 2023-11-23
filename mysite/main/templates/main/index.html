@@ -1,0 +1,168 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Обработка изображений</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- Сама нормализация -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+	<!-- Подключение css -->
+	<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <!-- Собственные стили (шрифты) -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700&display=swap" rel="stylesheet">
+    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <!-- Подключение иконки -->
+    
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'main/img/favicon/faviconport.png'%}">
+
+</head>
+<body>
+
+<!--...........................
+    Шапка
+............................-->
+
+<div class="header_slogan_arrow">
+	<div class="img_logo">
+        <a href="{% url 'home' %}"><img src="{% static 'main/img/header/logo.png'%}" alt= "Logo"></a>
+	</div>
+	<div class="header_slogan1">БЕСПЛАТНЫЙ</div>
+	<div class="header_slogan2">СЕРВИС ДЛЯ ОБРАБОТКИ ИЗОБРАЖЕНИЙ</div>
+
+    
+    <div class="Header_arrow">
+        <a href="#scrol" class = "Header_arrow"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
+</div>
+
+     
+<!--.........................................
+   Портфолио
+..........................................-->
+
+<div class="portfolio" id="scrol">
+	<div class="container">
+		<div class="title">
+            Выберите вид обработки
+        </div>
+	  <div class="row">
+          
+	   <div class="col-4">
+        <div class="portfolio_item">
+	    <div class="portfolio_img">
+            <a href="{% url 'sobel' %}"><img src="{% static 'main/img/portfolio/sobel.png'%}" alt= "Метод Собеля"></a>
+	    </div>
+	    <div class="portfolio_title">
+	    <a href="{% url 'sobel' %}">Метод Собеля</a>
+	    </div>
+	    <div class="portfolio_text">
+	     <p>Один из методов извлечения краев из изображений.</p>
+	    </div>
+           </div>
+  </div>
+       
+
+        <div class="col-4">
+            <div class="portfolio_item">
+	    <div class="portfolio_img">
+
+            <a href="{% url 'median' %}"><img src="{% static 'main/img/portfolio/median.png'%}" alt= "Медианный фильтр"></a>
+	    </div>
+	    <div class="portfolio_title">
+	    <a href="{% url 'median' %}">Медианный Фильтр</a>
+	    </div>
+	    <div class="portfolio_text">
+	     <p> Обработка изображений для уменьшения уровня шума.</p>
+                </div>
+        </div>
+ </div>
+        
+          
+        <div class="col-4">
+            <div class="portfolio_item">
+	    <div class="portfolio_img">
+            <a href="{% url 'billateral' %}"><img src="{% static 'main/img/portfolio/billateral.png'%}" alt= "Билатеральный фильтр"></a>
+	    </div>
+	    <div class="portfolio_title">
+	    <a href="{% url 'billateral' %}">Билатеральный Фильтр</a>
+	    </div>
+	    <div class="portfolio_text">
+	     <p>Это нелинейный сглаживающий фильтр с шумоподавлением изображений.</p>
+	   </div>
+            </div>
+          
+  </div>  	
+ </div>
+ </div>
+</div>
+    
+<!-- ПОДВАЛ -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4"><a href="{% url 'home' %}"><div><img src="{% static 'main/img/header/logo.png'%}" alt= "Logo"></div></a><p>©2023 бесплатная обработка изображений.</p> </div>
+                <div class="col-4"><p class="footer_social">Больше в Telegram Боте:</p>
+                    <p class="footer_social_icons">
+                        <img src="{% static 'main/img/header/QR.png'%}" alt= "qr">
+                        
+                    
+                    </p></div> 
+                        <div class="col-4">
+                            <div><a href="https://t.me/botpicfixer" class="botton" target="_blank">Связаться Telegram</a></div>
+                            <p>Напишите боту, чтобы узнать полный<br>список видов обработок.</p> </div>
+                        
+            </div>
+        </div>
+    </div>
+
+
+	
+</body>
+</html>
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="Путь самой иконки"> - Подключение иконки сайта.
+
+	     <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700&display=swap" rel="stylesheet"> - Берётся с сайтов шрифт
+
+	     <link rel="stylesheet" href="путь css"> - подключени сисс
+
+	     <img src="путь картинки" alt= "Текст, если не загрузится картинка"> - подключение картинки
+
+	     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> - нормализация стилей ВЕЗДЕ!!!!!!!!
+
+
+	     Чтобы проверить подключённые ссылки или шрифты, нужно: CTRL+U и нашимать на ссылки, если открываются, то работает.
+
+
+	     Теги:
+         
+         <a href="ссылка">Ссылка</a> - Текст с ссылкой
+
+	     <br> - Перенос строчки
+	     
+	     <div></div> - блок (объект) Даётся классификация для подключения стилей (шрифта)
+
+	     <h></h> - Заголовок
+	     
+	     <p></p> - Текст после заголовка
+	     
+	     arrow- Стрела! Перевод ;D
+	     
+	     <botton class="botton"></botton> - кнопка
+        .............................................
+	    <ul class="имеет класс">
+	    	<li><a href="google.com" class="ИМЕЕТ КЛАССЫ ИНОГДА"></a></li>
+	    	<li><a href="google.com" class="ИМЕЕТ КЛАССЫ ИНОГДА"></a></li>
+	    	<li><a href="google.com" class="ИМЕЕТ КЛАССЫ ИНОГДА"></a></li> - меню на странице
+	    <ul>
+        .............................................
+
+
+	 -->

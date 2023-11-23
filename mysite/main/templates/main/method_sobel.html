@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Метод Собеля</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+    <!-- Подключение иконки -->
+    
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'main/img/favicon/faviconport.png'%}">
+</head>
+<body>
+
+    <div class="median_filter" align="center">
+        <p>Метод Собеля</p>
+    </div>
+    <div class='information' align="justify">
+       <p><b>Метод Собеля</b> - это один из методов извлечения краев из изображений. Операция Собеля состоит из двух разных ядер. Один для поиска горизонтальных краев, а другой для поиска вертикальных краев. Затем результаты двух ядер объединяются, чтобы обнажить все значимые края изображения.</p>
+    </div><br>
+    <div class="table_time">
+        <table>
+        <tr>
+        <td align="center">Время работы</td>
+        <td align="center">Качество изображения</td>
+
+        </tr>
+        <tr >
+        <td align="center">60с</td>
+        <td align="center">70%</td>
+        </tr>
+        </table>
+    </div>
+    <div class="example">
+        <p>Пример метода Собеля:</p>
+    </div>
+   <div class="portfolio-sigle-page">
+		<div> 
+           <img src="{% static 'main/img/portfolio/big/sob.png'%}" alt="Метод Собеля">
+
+        <p align ="center"> Выберите фотографию:</p>
+        <form action="" method = "POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <!-- <input type="file" class="file_b" name="file_upload"><br><br> -->
+            <div class="file_b">{{ form.as_p }}</div><br>
+            <input type="submit" class="file_b" value="Отправить">
+        </form><br>
+
+
+        <div align="center"><img src="{% static 'main/img/portfolio/sobel_result.jpg'%}" style=" width: 800px;
+    height: auto; border-radius: 20px"></div>
+        <div align="center" style=""><a href="{% static 'main/img/portfolio/sobel_result.jpg'%}"><input type="button" class="file_b" value="Cкачать"></a></div>
+
+           <br><a href="{% url 'home' %}" class="botton-back">&larr;Вернуться на главную</a>
+		</div>
+	</div>
+		<div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4"><a href="{% url 'home' %}"><P class="footer_name"><img src="{% static 'main/img/header/logo.png'%}" alt= "Logo"></P></a> <p>©2023 бесплатная обработка изображений.</p> </div>
+                <div class="col-4"><p class="footer_social">Больше в Telegram Боте:</p>
+                    <p class="footer_social_icons">
+                         <img src="{% static 'main/img/header/QR.png'%}" alt= "qr">
+                    </p></div>
+                        <div class="col-4">
+                            <div><a href="https://t.me/botpicfixer" class="botton" target="_blank">Связаться Telegram</a></div>
+                            <p>Напишите боту, чтобы узнать полный<br>список видов обработок.</p> </div>
+                        
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Медианный Фильтр</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+    <!-- Подключение иконки -->
+    
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'main/img/favicon/faviconport.png'%}">
+</head>
+<body>
+    <div class="median_filter" align="center">
+        <p>Медианный фильтр</p>
+    </div>
+    <div class='information' align="justify">
+       <p><b>Медианный фильтр</b> - это метод нелинейной цифровой фильтрации, часто используемый для удаления шума из изображения или сигнала. Такое шумоподавление является типичным этапом предварительной обработки для улучшения результатов последующей обработки (например, обнаружения границ на изображении).</p>
+    </div><br>
+    <div class="table_time">
+        <table>
+        <tr>
+        <td align="center">Время работы</td>
+        <td align="center">Качество изображения</td>
+
+        </tr>
+        <tr>
+        <td align="center">10с</td>
+        <td align="center">90%</td>
+        </tr>
+        </table>
+    </div>
+    <div class="example">
+        <p>Пример медианного фильтра:</p>
+    </div>
+    <div class="portfolio-sigle-page">
+		<div> 
+           <img src="{% static 'main/img/portfolio/big/med.png'%}" alt="Медианный фильтр">
+
+       <p align ="center"> Выберите фотографию:</p>
+        <form action="" method = "POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="file_b">{{ form.as_p }}</div><br>
+            <input type="submit" class="file_b" value="Отправить">
+        </form><br>
+        <div align="center"><img src="{% static 'main/img/portfolio/median_result.jpg'%}" style=" width: 800px;
+    height: auto; border-radius: 20px"></div>
+            <div align="center" style=""><a href="{% static 'main/img/portfolio/median_result.jpg'%}"><input type="button" class="file_b" value="Cкачать"></a></div>
+           <br><a href="{% url 'home' %}" class="botton-back">&larr;Вернуться на главную</a>
+		</div>
+	</div>
+	 <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4"><a href="{% url 'home' %}"><P class="footer_name"><img src="{% static 'main/img/header/logo.png'%}" alt= "Logo"></P></a> <p>©2023 бесплатная обработка изображений.</p> </div>
+                <div class="col-4"><p class="footer_social">Больше в Telegram Боте:</p>
+                    <p class="footer_social_icons">
+                      <img src="{% static 'main/img/header/QR.png'%}" alt= "qr">
+                    </p></div> 
+                        <div class="col-4">
+                            <div><a href="https://t.me/botpicfixer" class="botton" target="_blank">Связаться Telegram</a></div>
+                            <p>Напишите боту, чтобы узнать полный<br>список видов обработок.</div>
+                        
+            </div>
+        </div>
+    </div>
+
+
+	
+</body>
+</html>
